@@ -1,0 +1,5 @@
+{
+  "name": "CMT HR Portal",
+  "description": "Unified host application for HR services including Offer Letters, Payslips, and Appointment scheduling, integrating disparate micro-frontends.",
+  "requestFramePermissions": []
+}
