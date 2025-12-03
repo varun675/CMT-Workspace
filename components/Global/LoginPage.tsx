@@ -75,13 +75,14 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
         {/* Header */}
         <div className="bg-slate-900 p-8 text-center relative">
            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-500 to-brand-700"></div>
-           <div className="flex justify-center mb-4">
+           <div className="flex flex-col justify-center items-center mb-2">
              <img 
-               src="/assets/Company Logo.PNG" 
+               src="./assets/Company Logo.PNG" 
                alt="CODESMOTECH" 
-               className="h-16 w-auto object-contain"
+               className="h-24 w-auto object-contain mb-3"
              />
            </div>
+           <p className="text-brand-100 text-sm font-medium">Unified HR Workspace</p>
         </div>
 
         {/* Form */}
