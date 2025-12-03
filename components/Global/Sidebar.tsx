@@ -52,16 +52,16 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeApp, onNavigate, isOpen,
         isOpen ? 'translate-x-0' : '-translate-x-full'
       }`}>
         {/* Brand */}
-        <div className="h-16 flex items-center justify-between px-6 border-b border-slate-800 flex-shrink-0">
-          <div className="flex items-center space-x-2">
+        <div className="h-16 flex items-center px-6 border-b border-slate-800 flex-shrink-0">
+          <div className="flex items-center justify-start w-full">
             <img 
               src="/assets/Company Logo.PNG" 
               alt="CODESMOTECH" 
-              className="h-10 w-auto"
+              className="h-12 w-auto object-contain"
             />
           </div>
           {/* Mobile Close Button */}
-          <button onClick={onClose} className="md:hidden text-slate-400 hover:text-white">
+          <button onClick={onClose} className="md:hidden absolute right-4 text-slate-400 hover:text-white">
             <X size={20} />
           </button>
         </div>
