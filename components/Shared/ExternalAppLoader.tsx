@@ -92,7 +92,8 @@ export const ExternalAppLoader: React.FC<ExternalAppLoaderProps> = ({
         onLoad={handleLoad}
         onError={handleError}
         // Sandbox permissions are crucial for security when embedding external sites
-        sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-modals"
+        // allow-downloads enables file downloads within the iframe
+        sandbox="allow-scripts allow-same-origin allow-forms allow-popups allow-modals allow-downloads"
         loading="lazy"
       />
       
