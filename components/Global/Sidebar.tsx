@@ -55,7 +55,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeApp, onNavigate, isOpen,
         <div className="h-16 flex items-center px-6 border-b border-slate-800 flex-shrink-0">
           <div className="flex items-center justify-start w-full">
             <img 
-              src="./assets/Company Logo.PNG" 
+              src="/assets/company-logo.PNG" 
               alt="CODESMOTECH" 
               className="h-14 w-auto object-contain"
             />
