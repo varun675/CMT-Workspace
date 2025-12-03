@@ -28,7 +28,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeApp, onNavigate, isOpen,
       case 'Settings': return <Settings size={20} />;
       case 'PenTool': return <PenTool size={20} />;
       case 'Medal': return <Medal size={20} />;
-      default: return <Hexagon size={20} />;
+      default: return <LayoutDashboard size={20} />;
     }
   };
 
@@ -55,9 +55,9 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeApp, onNavigate, isOpen,
         <div className="h-16 flex items-center justify-between px-6 border-b border-slate-800 flex-shrink-0">
           <div className="flex items-center space-x-2">
             <img 
-              src="/assets/Company Logo.png" 
+              src="/assets/Company Logo.PNG" 
               alt="CODESMOTECH" 
-              className="h-full w-auto"
+              className="h-10 w-auto"
             />
           </div>
           {/* Mobile Close Button */}
