@@ -74,7 +74,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
 
       <div className="bg-white w-full max-w-md rounded-2xl shadow-xl border border-slate-200 relative z-10 overflow-hidden animate-in fade-in zoom-in duration-500">
         {/* Header */}
-        <div className="bg-slate-900 p-8 text-center relative">
+        <div className="bg-white p-8 text-center relative">
            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-500 to-brand-700"></div>
            <div className="flex flex-col justify-center items-center mb-2">
              <div className="bg-white rounded-lg p-2 inline-block mb-3 shadow-lg">
@@ -85,11 +85,11 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
                />
              </div>
            </div>
-           <p className="text-brand-100 text-sm font-medium">Unified HR Workspace</p>
+           <p className="text-slate-600 text-sm font-medium">Unified HR Workspace</p>
         </div>
 
         {/* Form */}
-        <div className="p-8">
+        <div className="p-8 bg-slate-100">
           <form onSubmit={handleLogin} className="space-y-5">
             {error && (
               <div className="bg-red-50 border border-red-100 text-red-600 text-sm p-3 rounded-lg flex items-start gap-2 animate-in slide-in-from-top-2">
