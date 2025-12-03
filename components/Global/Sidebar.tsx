@@ -57,9 +57,8 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeApp, onNavigate, isOpen,
             <img 
               src="/assets/Company Logo.png" 
               alt="CODESMOTECH" 
-              className="h-8 w-auto"
+              className="h-full w-auto"
             />
-            <span className="text-lg font-bold text-white tracking-tight truncate hidden sm:inline">CODESMOTECH</span>
           </div>
           {/* Mobile Close Button */}
           <button onClick={onClose} className="md:hidden text-slate-400 hover:text-white">
