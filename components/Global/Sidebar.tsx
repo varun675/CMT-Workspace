@@ -1,5 +1,5 @@
 import React from 'react';
-import { LayoutDashboard, FileText, Banknote, CalendarCheck, Settings, LogOut, Hexagon, PenTool, Medal, X, ShieldAlert } from 'lucide-react';
+import { LayoutDashboard, FileText, Banknote, CalendarCheck, Settings, LogOut, PenTool, Medal, X, ShieldAlert } from 'lucide-react';
 import { AppId, AppManifest } from '../../types';
 
 interface SidebarProps {
@@ -53,9 +53,13 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeApp, onNavigate, isOpen,
       }`}>
         {/* Brand */}
         <div className="h-16 flex items-center justify-between px-6 border-b border-slate-800 flex-shrink-0">
-          <div className="flex items-center space-x-2 text-brand-500">
-            <Hexagon size={28} strokeWidth={2.5} className="text-brand-500" />
-            <span className="text-lg font-bold text-white tracking-tight truncate">CODESMOTECH</span>
+          <div className="flex items-center space-x-2">
+            <img 
+              src="/assets/logo.png" 
+              alt="CODESMOTECH" 
+              className="h-8 w-auto"
+            />
+            <span className="text-lg font-bold text-white tracking-tight truncate hidden sm:inline">CODESMOTECH</span>
           </div>
           {/* Mobile Close Button */}
           <button onClick={onClose} className="md:hidden text-slate-400 hover:text-white">
