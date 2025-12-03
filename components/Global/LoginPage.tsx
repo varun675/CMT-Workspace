@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Hexagon, Lock, Mail, ArrowRight, AlertCircle, Loader2 } from 'lucide-react';
+import { Lock, Mail, ArrowRight, AlertCircle, Loader2 } from 'lucide-react';
 import { UserProfile } from '../../types';
 
 interface LoginPageProps {
@@ -76,12 +76,12 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
         <div className="bg-slate-900 p-8 text-center relative">
            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-500 to-brand-700"></div>
            <div className="flex justify-center mb-4">
-             <div className="bg-white/10 p-3 rounded-xl backdrop-blur-sm">
-                <Hexagon size={40} className="text-brand-500" strokeWidth={2} />
-             </div>
+             <img 
+               src="/assets/Company Logo.PNG" 
+               alt="CODESMOTECH" 
+               className="h-16 w-auto object-contain"
+             />
            </div>
-           <h1 className="text-2xl font-bold text-white tracking-tight">CODESMOTECH</h1>
-           <p className="text-brand-100 text-sm mt-1">Unified HR Workspace</p>
         </div>
 
         {/* Form */}
