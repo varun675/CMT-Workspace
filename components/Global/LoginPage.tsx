@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Lock, Mail, ArrowRight, AlertCircle, Loader2 } from 'lucide-react';
 import { UserProfile } from '../../types';
+import logoImage from '../../src/assets/company-logo.PNG';
 
 interface LoginPageProps {
   onLogin: (user: UserProfile) => void;
@@ -77,7 +78,7 @@ export const LoginPage: React.FC<LoginPageProps> = ({ onLogin }) => {
            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-500 to-brand-700"></div>
            <div className="flex flex-col justify-center items-center mb-2">
              <img 
-               src="/assets/company-logo.PNG" 
+               src={logoImage} 
                alt="CODESMOTECH" 
                className="h-24 w-auto object-contain mb-3"
              />

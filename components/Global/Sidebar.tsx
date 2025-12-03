@@ -1,6 +1,7 @@
 import React from 'react';
 import { LayoutDashboard, FileText, Banknote, CalendarCheck, Settings, LogOut, PenTool, Medal, X, ShieldAlert } from 'lucide-react';
 import { AppId, AppManifest } from '../../types';
+import logoImage from '../../src/assets/company-logo.PNG';
 
 interface SidebarProps {
   activeApp: AppId;
@@ -55,7 +56,7 @@ export const Sidebar: React.FC<SidebarProps> = ({ activeApp, onNavigate, isOpen,
         <div className="h-16 flex items-center px-6 border-b border-slate-800 flex-shrink-0">
           <div className="flex items-center justify-start w-full">
             <img 
-              src="/assets/company-logo.PNG" 
+              src={logoImage} 
               alt="CODESMOTECH" 
               className="h-14 w-auto object-contain"
             />
